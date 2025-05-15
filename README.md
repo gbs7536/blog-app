@@ -1,46 +1,83 @@
-# Getting Started with Create React App
+# React Blog  
+React와 Firebase를 이용한 리액트 블로그 프로젝트입니다.  
+URL: https://react-blog-2b711.web.app/  
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+## 📌 프로젝트 설명
 
-In the project directory, you can run:
+### 주요 기능
+- 게시글 CRUD 기능
+- 사용자 인증 및 권한 관리 (Firebase Auth)
+- 라우팅과 페이지 구성 (React Router v7)
 
-### `yarn start`
+### 앱 구조
+- create-react-app 기반 SPA
+- Context API를 활용한 상태관리
+- 사용자 인증 및 테마 다크모드 기능
+- Toastify를 이용한 알림 처리
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### 애니메이션 & 스타일링
+- CSS (BEM 방식)
+- 캐러셀에 transition 효과 적용
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### 배포
+- Firebase Hosting
 
-### `yarn test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🔌 API 및 연동
+- Firestore를 통한 실시간 게시글/댓글 데이터 처리
+- Firebase Auth를 이용한 이메일 기반 사용자 인증
 
-### `yarn build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🛠 사용 스택
+- React 19
+- TypeScript
+- Firebase (Auth, Firestore, Hosting)
+- React Router v7
+- CSS (BEM 방식)
+- React Toastify
+- React Icons
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📁 기타 학습 개념
+- CRA 기반 프로젝트 세팅
+- React Hooks (useEffect, useState, useContext, useCallback)
+- React Router v7의 구조적 라우팅 처리
 
-### `yarn eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## 💻 구현 기능
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# 공통 페이지
+- 로그인 / 회원가입 페이지 (Firebase Auth)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+# 메인 페이지
+- 최신 글 목록
+- 캐러셀 콘텐츠 배치
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+# 게시글 목록 페이지
+- 전체 글 리스트 보기
+- 상세 페이지로 이동
 
-## Learn More
+# 게시글 상세 페이지
+- 제목, 본문, 작성자, 작성일 표시
+- 댓글 입력 및 삭제 기능
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# 글 수정 페이지
+- 본인 작성 글 수정 및 삭제
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# 카테고리 필터
+- 카테고리 탭 클릭 시 해당 글만 보기
+
+# 사용자 프로필
+- 로그인한 사용자 정보 확인 (Velog / Medium 스타일)
+
+# 기타
+- 다크모드 / 라이트모드 전환
+- 내가 쓴 글만 모아보기
+- 댓글 CRUD
+
